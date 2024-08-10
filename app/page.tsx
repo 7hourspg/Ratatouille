@@ -1,7 +1,7 @@
 import * as React from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { Coffee, Cookie, Truck } from "lucide-react"
+import { HeartPulse, Pizza, Truck } from "lucide-react"
 import FoodImage from "public/food.png"
 
 import { siteConfig } from "@/config/site"
@@ -34,12 +34,12 @@ export default function IndexPage() {
     {
       title: "Healthy Food",
       description: "We deliver your food in the fastest time possible",
-      icon: <Cookie size={48} />,
+      icon: <HeartPulse size={48} />,
     },
     {
       title: "Tasty Food",
       description: "We deliver your food in the fastest time possible",
-      icon: <Cookie size={48} />,
+      icon: <Pizza size={48} />,
     },
   ]
   return (

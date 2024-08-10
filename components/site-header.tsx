@@ -1,4 +1,6 @@
+import Image from "next/image"
 import Link from "next/link"
+import SVGIcons from "public/rat.svg"
 
 import { siteConfig } from "@/config/site"
 import { Button, buttonVariants } from "@/components/ui/button"
@@ -15,7 +17,13 @@ export function SiteHeader() {
       <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
-          <Icons.logo className="h-6 w-6" />
+          <Image
+            src={SVGIcons}
+            alt="Rat"
+            width={40}
+            height={40}
+            className="rounded-full"
+          />
           <span className="inline-block font-bold">{siteConfig.name}</span>
         </Link>
 
